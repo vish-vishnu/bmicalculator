@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #362c53;
+}
+.container{
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1{
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1160ae;
+}
+.calculator-container{
+    padding: 10px;
+    display: flex;
+}
+.box{
+    width: 300px;
+    background-image: url("./assets/bmi.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.input-container{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    color: #333;
+    
+}
+.input-container label{
+    font-size: 14px;
+    font-weight: 500;
+}
+.input-container input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    outline: solid #157be0 1px;
+}
+.buttons-container{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.result{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #157be0;
+}
+.status{
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+button{
+    padding: 10px 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #157be0;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+button:hover{
+    background-color: #0d5bb5;
+}
+button:active{
+    background-color: #0a3d7a;
+}
+button:nth-child(2){
+    background-color: #e01557;
+}
+button:nth-child(2):hover{
+    background-color: #b50d42;
+}
+button:nth-child(2):active{
+    background-color: #7a0a2c;
+}
+.result-container{
+    border: dashed rgb(133, 202, 245);
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.error{
+    font-size: 14px;
+    color: red;
+}
